@@ -1,5 +1,0 @@
-cmd yourself into the file and then do "php -S localhost:8080"
-when you've done that just open your browser and go on localhost:8080
-oh and btw make sure the config.php file has the correct info.
-ALSO I FORGOT TO ADD, IF YOU HAVE ANY SPECIAL CHARACTER IN YOUR DATABASE DATA THIS WHOLE THING WILL BREAK,
-please use the dataset I provided in skilaverkefni 3 file :)

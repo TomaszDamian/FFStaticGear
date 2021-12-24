@@ -1,0 +1,5 @@
+1. open cmd and get to the root folder of this project.
+2. make sure you have xampp mysql turned on.
+3. write "php -S localhost:8080" in your cmd to run it locally.
+4. win?
+5. repeat.

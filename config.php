@@ -2,7 +2,7 @@
 
 return [
 	'database'=>[
-		'name'=>'progresstracker_v6',
+		'name'=>'ffstatic',
 		'username' => 'root',
 		'password' => '',
 		'connection' => 'mysql:host=127.0.0.1',

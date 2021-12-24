@@ -3,9 +3,17 @@ namespace App\Controllers;
 use App\Core\App;
 class PagesController{
 	public function home(){
-		redirect('ViewAllSchools');
+		redirect('UserHome');
 	}	
-	public function about(){
+	
+	public function UserHome(){
+		$Characters = App::get('database')->selectAll('users');
+		$currentGear = App::get('database')->selectAll('currentGear');
+		$neededGear = App::get('database')->selectAll('neededGear');
+		$CharacterClass = App::get('database')->selectAll('CharacterClasses');
+	return view('UserHome', compact('Characters', 'currentGear', 'neededGear', 'CharacterClass'));
+	}
+	/*public function about(){
 		$company = 'fs';
 		return view('about', compact('company'));
 	}
@@ -37,5 +45,5 @@ class PagesController{
 	public function ViewAll(){
 		$schools = App::get('database')->selectAll('schools');
 		return view('ViewAllSchools', compact('schools'));
-	}
+	}*/
 }
