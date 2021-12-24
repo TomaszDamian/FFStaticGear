@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+.GreenBackGround{
+	background-color: #71ce7f;
+}
+.Blog{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.schoolContainer{
+	width: 100%;
+}
+.bodyDiv{
+	border: 1px solid black;
+}
+.MarT-10{
+	margin-top: 10px;
+}
+.ownerText{
+	text-align: right;
+}
+.WhiteBackGround{
+	background-color: white;
+}
+.alignRight{
+	text-align: right;
+}
+.blackBorder{
+	border:black 1px solid;
+}
