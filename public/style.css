@@ -1,0 +1,19 @@
+html, body .Blog{
+	height: 100%;
+	width: 100%;
+}
+.Blog{
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bodyDiv{
+	border: 1px solid black;
+}
+.MarT-10{
+	margin-top: 10px;
+}
+.ownerText{
+	text-align: right;
+}
