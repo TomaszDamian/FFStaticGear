@@ -2,7 +2,7 @@
 
 return [
 	'database'=>[
-		'name'=>'lokaverkefni',
+		'name'=>'progresstracker_v6',
 		'username' => 'root',
 		'password' => '',
 		'connection' => 'mysql:host=127.0.0.1',

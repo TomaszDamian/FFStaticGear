@@ -1,7 +1,6 @@
 <?php
 
 use App\Core\{Router, Request};
-//use App\Core\Request;
 
 require 'vendor/autoload.php';
 require 'core/bootstrap.php';

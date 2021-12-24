@@ -1,12 +1,19 @@
-html, body .Blog{
-	height: 100%;
-	width: 100%;
+html, body {
+    margin: 0;
+    height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+.GreenBackGround{
+	background-color: #71ce7f;
 }
 .Blog{
-	width: 600px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-evenly;
+}
+.schoolContainer{
+	width: 100%;
 }
 .bodyDiv{
 	border: 1px solid black;
@@ -16,4 +23,13 @@ html, body .Blog{
 }
 .ownerText{
 	text-align: right;
+}
+.WhiteBackGround{
+	background-color: white;
+}
+.alignRight{
+	text-align: right;
+}
+.blackBorder{
+	border:black 1px solid;
 }
