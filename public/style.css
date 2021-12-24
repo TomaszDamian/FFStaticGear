@@ -12,9 +12,7 @@ html, body {
 	flex-direction: column;
 	justify-content: space-evenly;
 }
-.schoolContainer{
-	width: 100%;
-}
+
 .bodyDiv{
 	border: 1px solid black;
 }
@@ -32,4 +30,38 @@ html, body {
 }
 .blackBorder{
 	border:black 1px solid;
+}
+
+.ContentHolder{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.UserContainer{
+	width: 1000px;
+}
+.BiSItemContainer{
+	display: flex;
+	justify-content: right;
+}
+.ItemIcon{
+	height: 30px;
+	width: 30px;
+}
+.ItemContainer{
+	display: flex;
+}
+.JobIcon{
+	width: 50px;
+	height: 50px;
+	display:flex;
+	justify-content: left;
+}
+.GearContainer{
+	display: flex;
+	justify-content: space-between;
+}
+.BiSText{
+	text-align: right;
 }

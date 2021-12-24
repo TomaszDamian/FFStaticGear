@@ -37,12 +37,12 @@ insert into CharacterClasses(ownerID, ClassName)values("3","Astrologian");
 insert into CharacterClasses(ownerID, ClassName)values("3","Sage");
 insert into CharacterClasses(ownerID, ClassName)values("4","Reaper");
 
-insert into currentGear(ownerID, gear)values("1", '{"head":"crafted", "body":"savage", "gloves":"normals", "legs":"tombstones", "feet":"extremes"}');
-insert into currentGear(ownerID, gear)values("2", '{"head":"crafted", "body":"savage", "gloves":"normals", "legs":"tombstones", "feet":"extremes"}');
-insert into currentGear(ownerID, gear)values("3", '{"head":"crafted", "body":"savage", "gloves":"normals", "legs":"tombstones", "feet":"extremes"}');
-insert into currentGear(ownerID, gear)values("4", '{"head":"crafted", "body":"savage", "gloves":"normals", "legs":"tombstones", "feet":"extremes"}');
+insert into currentGear(ownerID, gear)values("1", '{"Head":"crafted", "Body":"savage", "Gloves":"normals", "Legs":"tombstones", "Feet":"extremes"}');
+insert into currentGear(ownerID, gear)values("2", '{"Head":"crafted", "Body":"savage", "Gloves":"normals", "Legs":"tombstones", "Feet":"extremes"}');
+insert into currentGear(ownerID, gear)values("3", '{"Head":"crafted", "Body":"savage", "Gloves":"normals", "Legs":"tombstones", "Feet":"extremes"}');
+insert into currentGear(ownerID, gear)values("4", '{"Head":"crafted", "Body":"savage", "Gloves":"normals", "Legs":"tombstones", "Feet":"extremes"}');
 
-insert into neededGear(ownerID, gear)values("1", '{"head":"tombstone", "body":"extremes", "gloves":"tombstone", "legs":"tombstones", "feet":"extremes"}');
-insert into neededGear(ownerID, gear)values("2", '{"head":"tombstone", "body":"extremes", "gloves":"tombstone", "legs":"tombstones", "feet":"extremes"}');
-insert into neededGear(ownerID, gear)values("3", '{"head":"tombstone", "body":"savage", "gloves":"tombstone", "legs":"tombstones", "feet":"extremes"}');
-insert into neededGear(ownerID, gear)values("4", '{"head":"extremes", "body":"extremes", "gloves":"extremes", "legs":"tombstones", "feet":"extremes"}');
+insert into neededGear(ownerID, gear)values("1", '{"Head":"tombstone", "Body":"extremes", "Gloves":"tombstone", "Legs":"tombstones", "Feet":"extremes"}');
+insert into neededGear(ownerID, gear)values("2", '{"Head":"tombstone", "Body":"extremes", "Gloves":"tombstone", "Legs":"tombstones", "Feet":"extremes"}');
+insert into neededGear(ownerID, gear)values("3", '{"Head":"tombstone", "Body":"savage", "Gloves":"tombstone", "Legs":"tombstones", "Feet":"extremes"}');
+insert into neededGear(ownerID, gear)values("4", '{"Head":"extremes", "Body":"extremes", "Gloves":"extremes", "Legs":"tombstones", "Feet":"extremes"}');
