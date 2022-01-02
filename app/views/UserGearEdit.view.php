@@ -23,11 +23,77 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
-                                        
-
+                        <h1 class="text-2xl font-bold" style="text-align: center">
+                        <?=$Character->CharacterName, " :"?>
+                        </h1>
+                        <!-- character current gear displayed-->
+                        <div class="GearContainer">
+                            <div>
+                                <p class="text-sm">current gear:</p>
+                                <?php 
+                                    foreach ($currentGear as $cgear):
+                                        $counter = 0;
+                                        if ($cgear->ownerID == $Character->ID):
+                                            $GearDetail = json_decode($cgear->gear);
+                                            foreach ($GearDetail as $piece => $source):
+                                                echo 
+                                                "<div class='ItemContainer'>
+                                                    <img class='ItemIcon' src='../resources/images/ItemIcons/$piece.png'></img>
+                                                    <p class='ml-2 mr-2'> - </p>
+                                                    <div>
+                                                        <select class='dropdownBox'>
+                                                            <option>$source</option>
+                                                            <option>dungeon</option>
+                                                            <option>extreme</option>
+                                                            <option>tombstone</option>
+                                                            <option>savage</option>
+                                                            <option>crafted</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                ";
+                                            endforeach;
+                                        endif;
+                                    endforeach;
+                                ?>
+                            </div>
+                            <div>
+                                <?php 
+                                    foreach ($neededGear as $ngear):
+                                        $counter = 0;
+                                        if ($ngear->ownerID == $Character->ID):
+                                            $GearDetail = json_decode($ngear->gear);
+                                            foreach ($GearDetail as $piece => $source):
+                                                echo 
+                                                "<div class='ItemContainer'>
+                                                    <div>
+                                                        <select class='dropdownBox'>
+                                                            <option>$source</option>
+                                                            <option>dungeon</option>
+                                                            <option>extreme</option>
+                                                            <option>tombstone</option>
+                                                            <option>savage</option>
+                                                            <option>crafted</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class='ml-2 mr-2'> - </p>
+                                                    <img class='ItemIcon' src='../resources/images/ItemIcons/$piece.png'></img>  
+                                                </div>
+                                                ";
+                                            endforeach;
+                                        endif;
+                                    endforeach;
+                                ?>
+                            </div>
+                        </div>
+                        <div style="display:flex; justify-content:center;">
+						    <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 border-blue-700 rounded"> Edit my Gear </button>
+					    </div>
+                    </div> 
                 </div>
             </div>
         </div>
+            
     <?php endif; ?>
 <?php 
 $counter++;

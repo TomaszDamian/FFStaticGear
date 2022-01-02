@@ -68,3 +68,8 @@ html, body {
 	height: 50px;
 	width: 50px;
 }
+.dropdownBox{
+	text-align: center;
+	width: 115px;
+	height: 30px;
+}
