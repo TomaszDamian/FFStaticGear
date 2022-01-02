@@ -27,3 +27,4 @@ $router->post("SubmitSchool", "PostController@SubmitNewSchool");
 //here down will be the new routes I will be actually using
 $router->get("","PagesController@home");
 $router->get("UserHome", "PagesController@UserHome");
+$router->get("EditUserGear", "PagesController@EditUserGear");

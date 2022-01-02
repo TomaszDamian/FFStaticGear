@@ -53,10 +53,9 @@ html, body {
 	display: flex;
 }
 .JobIcon{
-	width: 50px;
-	height: 50px;
 	display:flex;
 	justify-content: left;
+	flex-wrap: wrap;
 }
 .GearContainer{
 	display: flex;
@@ -64,4 +63,8 @@ html, body {
 }
 .BiSText{
 	text-align: right;
+}
+.Cimage{
+	height: 50px;
+	width: 50px;
 }

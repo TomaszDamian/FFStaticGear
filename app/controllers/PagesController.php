@@ -10,8 +10,17 @@ class PagesController{
 		$Characters = App::get('database')->selectAll('users');
 		$currentGear = App::get('database')->selectAll('currentGear');
 		$neededGear = App::get('database')->selectAll('neededGear');
-		$CharacterClass = App::get('database')->selectAll('CharacterClasses');
-	return view('UserHome', compact('Characters', 'currentGear', 'neededGear', 'CharacterClass'));
+		$CharacterClassID = App::get('database')->selectAll('CharacterClasses');
+		$CharacterClassName = App::get('database')->selectAll('ClassNames');
+	return view('UserHome', compact('Characters', 'currentGear', 'neededGear', 'CharacterClassID', 'CharacterClassName'));
+	}
+	public function EditUserGear(){
+		$Characters = App::get('database')->selectAll('users');
+		$currentGear = App::get('database')->selectAll('currentGear');
+		$neededGear = App::get('database')->selectAll('neededGear');
+		$CharacterClassID = App::get('database')->selectAll('CharacterClasses');
+		$CharacterClassName = App::get('database')->selectAll('ClassNames');
+		return view('UserGearEdit', compact('Characters', 'currentGear', 'neededGear', 'CharacterClassID', 'CharacterClassName'));
 	}
 	/*public function about(){
 		$company = 'fs';
